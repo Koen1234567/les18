@@ -1,0 +1,121 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    min-height: 80px; 
+    background-color: olive;
+    background-image: url('afbeeldingen/header_middelburg.jpg'); 
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 35px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+}
+
+.kolom1,
+#inhoudtwee {
+    width: 100%; 
+}
+
+article {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+article img {
+    margin-top: 20px;
+    width: 100%; 
+    height: auto;
+}
+
+.article-content {
+    max-width: 100%; 
+}
+
+
+.col-grid {
+    width: calc(100% / 3 - 10px); 
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.col-grid:nth-child(1) { background-color: lightblue; }
+.col-grid:nth-child(2) { background-color: lightgreen; }
+.col-grid:nth-child(3) { background-color: lightcoral; }
+.col-grid:nth-child(4) { background-color: lightpink; }
+.col-grid:nth-child(5) { background-color: lightsalmon; }
+.col-grid:nth-child(6) { background-color: lightseagreen; }
+.col-grid:nth-child(7) { background-color: lightgoldenrodyellow; }
+.col-grid:nth-child(8) { background-color: lightsteelblue; }
+.col-grid:nth-child(9) { background-color: lightcyan; }
+
+footer {
+    min-height: 80px; 
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 45px; 
+        min-height: 100px; 
+    }
+
+    section {
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+
+    .kolom1,
+    #inhoudtwee {
+        width: 50%; 
+    }
+
+    article {
+        flex-direction: row; 
+    }
+
+    article img {
+        width: 150px; 
+        margin-left: 20px;
+    }
+
+    .article-content {
+        max-width: 70%; 
+    }
+
+    .col-grid {
+        width: calc(100% / 9 - 10px); 
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        font-size: 55px; 
+    }
+
+    footer {
+        min-height: 100px; 
+    }
+}
